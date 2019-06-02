@@ -1,0 +1,1057 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat|Poppins&display=swap');
+
+/*==========================================================
+                    BASE CSS STARTS
+===========================================================*/
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    ;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #333333;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+    color: #363636;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+p {
+    letter-spacing: 0;
+    line-height: 1.8;
+}
+
+a {
+    text-decoration: none;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section-padding {
+    padding: 7rem 0;
+}
+
+.section-title {
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1.5rem;
+
+}
+
+.section-title h2 span {
+    color: #FF6347;
+}
+
+.section-darker {
+    background-color: #eeeeee;
+}
+
+
+.sec-icon .iconify {
+    color: #363636;
+}
+
+.sec-icon {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.sec-icon::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    left: -70px;
+    margin-top: -5.5px;
+    top: 60%;
+    background: #363636;
+    width: 50px;
+    height: 2.5px;
+}
+
+.sec-icon::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    right: -70px;
+    margin-top: -5.5px;
+    top: 60%;
+    background: #363636;
+    width: 50px;
+    height: 2.5px;
+}
+
+
+
+
+/*==========================================================
+                    BASE CSS ENDS
+===========================================================*/
+
+
+
+
+/*==========================================================
+                    NAVBAR CSS STARTS
+===========================================================*/
+/*para sa navbar.js*/
+
+.navbar {
+    padding: 0;
+}
+
+.navbar-default {
+    background: #e74c3c;
+
+}
+
+.navbar-transparent {
+    background-color: transparent;
+
+}
+
+/*para sa navbar.js end*/
+
+
+
+header a {
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+}
+
+header .nav-item {
+    padding: 0.5rem;
+
+}
+
+.active {
+    color: #dddddd !important;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+
+header .active a::after {
+    color: #dddddd;
+    content: '';
+    height: 2px;
+    background: #dddddd;
+    display: block;
+    margin-top: 2px;
+}
+
+
+
+/*==========================================================
+                    NAVBAR CSS ENDS
+===========================================================*/
+
+
+
+
+/*==========================================================
+                    HERO CSS STARTS
+===========================================================*/
+
+
+
+.banner-area {
+    background-image: url(../img/tropical-1651426_1920.jpg);
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+}
+
+.banner-area::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.banner-table {
+    display: table;
+    margin: 0;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.banner-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.welcome-text {
+    color: #dddddd;
+}
+
+.welcome-text h6 {
+    color: #dddddd;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+}
+
+.welcome-text h1 {
+    font-size: 3.3em;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: #dddddd;
+    font-family: 'Kaushan Script', cursive;
+}
+
+p.name-line {
+    height: 1px;
+    width: 100px;
+    background: #FF6347;
+    display: inline-block;
+    margin: 1rem;
+}
+
+.welcome-text h3 {
+    color: #ffffff;
+    letter-spacing: 3px;
+}
+
+.welcome-text h3 span {
+    background: #F1C40F;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 100%;
+}
+
+.banner-btn a {
+    border: 2px solid #FF6347;
+    color: #ffffff;
+    padding: 10px 35px;
+    display: inline-block;
+    margin-top: 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 991px) {
+    .welcome-text {
+        text-align: center;
+        margin: 25px auto;
+    }
+}
+
+
+
+/*==========================================================
+                    HERO CSS ENDS
+===========================================================*/
+
+
+
+/*==========================================================
+                    ABOUT CSS STARTS
+===========================================================*/
+
+.about-right h2 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #FF6347;
+
+}
+
+.about-right a {
+    color: #FF6347;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+.about-right p span {
+    color: #262626;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.about-list {
+    list-style: none;
+}
+
+.about-right .about-list li {
+    margin-bottom: 10px;
+}
+
+.about-right .about-list li .title {
+    position: relative;
+    margin-right: 10px;
+    padding-bottom: 1px;
+    color: #FF6347;
+    font-weight: 700;
+}
+
+.about-right .about-list li .title:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: #e1e1e1;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.about-right .about-list li .title:after {
+    position: absolute;
+    content: ':';
+    right: -8px;
+}
+
+.about-right .about-list li .value {
+    position: relative;
+}
+
+.about-right .about-list li .value:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.proPic {
+    padding-right: 3rem;
+}
+
+.proPic img {
+    border: 1px solid #ddd;
+    padding: 5px;
+    box-shadow: 6px 6px 1px #FF6347;
+    -webkit-transition: .9s;
+}
+
+.proPic img:hover {
+    box-shadow: none;
+    -webkit-transition: .9s;
+}
+
+
+.cv-btn {
+    background: #FF6347;
+    padding: 10px 15px;
+    color: #ffffff !important;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.cv-btn:hover,
+.cv-btn:focus {
+    color: #ffffff;
+    background: #e74c3c;
+}
+
+
+
+/*==========================================================
+                    ABOUT CSS ENDS
+===========================================================*/
+
+
+
+/*==========================================================
+                    QUOTATION CSS START
+===========================================================*/
+
+
+.quotation-area {
+    background-image: url(../img/art-backlit-crescent-moon-556665.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.quotation-area:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.single-quotation .blockquote h2 {
+    color: #dddddd;
+    letter-spacing: 2px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+
+
+
+/*==========================================================
+                    QUOTATION CSS END
+===========================================================*/
+
+
+
+/*==========================================================
+                    SERVICES CSS STARTS
+===========================================================*/
+
+.services-icon .iconify {
+    font-size: 35px;
+    color: #ffffff;
+}
+
+.services-content h3 {
+    line-height: 1.9;
+    text-transform: uppercase;
+}
+
+.services-icon {
+    border: 1px solid #FF6347;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding: 20px;
+    background-color: #FF6347;
+}
+
+.single-services {
+    padding: 40px 20px;
+    box-shadow: rgba(58, 78, 95, 0.2) 0 10px 16px, rgba(58, 78, 95, 0.05) 0 -5px 16px;
+    margin-bottom: 15px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.single-services:hover {
+    box-shadow: 1px 3px 4px 5px rgba(199, 199, 199, .8);
+    transition: ease .09s;
+}
+
+.single-services:hover .services-icon {
+    background-color: #ffffff;
+    transition: ease .3s;
+    border-color: #FF6347;
+}
+
+.single-services:hover .services-icon .iconify {
+    color: #FF6347;
+}
+
+.single-services:hover {
+    background-color: #FF6347;
+    -webkit-transition: .9s;
+    -moz-transition: .9s;
+    -ms-transition: .9s;
+    -o-transition: .9s;
+    transition: .9s;
+}
+
+.single-services:hover .services-content {
+    color: #ffffff;
+}
+
+.single-services:hover .services-content h3 {
+    color: #ffffff;
+}
+
+
+
+
+/*==========================================================
+                    SERVICES CSS ENDS
+===========================================================*/
+
+
+
+/*==========================================================
+                    STATISTIC CSS START
+===========================================================*/
+.carousel {}
+
+.statistic-area {
+    background-image: url(../img/tropical-1651426_1920.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.statistic-area .sts-overlay {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.single-count .iconify {
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.single-count h2 {
+    font-size: 50px;
+    color: #FF6347;
+}
+
+.single-count p {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+/*==========================================================
+                    STATISTIC CSS END
+===========================================================*/
+
+
+
+
+/*==========================================================
+                    PORTFOLIO CSS STARTS
+===========================================================*/
+
+#portfolio-section {
+    padding-bottom: 0;
+}
+
+.project-item img {
+    width: 100%;
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background: rgba(0, 0, 0, 0.9);
+    opacity: 0;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    cursor: crosshair;
+}
+
+.overlay .overlay-inner {
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+}
+
+.overlay .overlay-inner h4 {
+    color: #FF6347 !important;
+    margin-bottom: 0 !important;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    -webkit-transform: translateY(-30px);
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -o-transform: translateY(-30px);
+    transform: translateY(-30px);
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.overlay .overlay-inner p {
+    color: #fff;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    -webkit-transform: translateY(30px);
+    -moz-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    -o-transform: translateY(30px);
+    transform: translateY(30px);
+    margin-top: 10px;
+}
+
+.project-item:hover .overlay .overlay-inner h4 {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.project-item:hover .overlay .overlay-inner p {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.project-item a:hover .overlay {
+    opacity: 1;
+}
+
+ul.port-nav-list {
+    padding: 0 0 50px 0;
+    list-style: none;
+    text-align: center;
+}
+
+ul.port-nav-list li {
+    display: inline-block;
+    margin-right: 10px;
+    border: 1px solid #e74c3c;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+}
+
+ul.port-nav-list li a {
+    display: block;
+    cursor: pointer;
+    color: rgb(73, 73, 73);
+    font-size: 14px;
+    padding: 8px 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 900;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+}
+
+ul.port-nav-list li a.active {
+    color: #fff;
+    border: 1px solid #e74c3c;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    background: #e74c3c;
+}
+
+.port-items {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.portfolio-items .port-items .single-port {
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.single-port {
+    padding: 0;
+}
+
+
+/*==========================================================
+                    PORTFOLIO CSS ENDS
+===========================================================*/
+
+
+/*==========================================================
+                    WORK EXPERIENCE CSS START
+===========================================================*/
+
+.education-area h2,
+.experience-area h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.experience-area h2 {
+    margin-top: 40px;
+}
+
+.experience-area .content h4 {
+    font-size: 1.2rem;
+}
+
+.experience-area .content h5 {
+    font-size: 0.9rem;
+}
+
+.education-area .content h4 {
+    font-size: 1.2rem;
+}
+
+.education-area .content h5 {
+    font-size: 0.9rem;
+}
+
+
+.work-area .content h3 {
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+
+
+.education-area h2::before {
+    content: '----';
+    padding-right: 10px;
+}
+
+.education-area h2::after {
+    content: '----';
+    padding-left: 10px;
+}
+
+.experience-area h2::before {
+    content: '----';
+    padding-right: 10px;
+}
+
+.experience-area h2::after {
+    content: '----';
+    padding-left: 10px;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    border-radius: 30px;
+    z-index: -1;
+    width: 6px;
+    background-color: #dddddd;
+    top: 0;
+}
+
+.wrapper {
+    background-color: inherit;
+    width: 50%;
+    padding: 10px 40px;
+    position: relative;
+}
+
+.wrapper::after {
+    position: absolute;
+    content: '';
+    background: url('https://api.iconify.design/ant-design:safety-certificate-outline.svg?color=%23FF6347') no-repeat center center / contain;
+    border: 4px solid #dddddd;
+    top: 15px;
+    width: 40px;
+    height: 40px;
+    right: -20px;
+    border-radius: 50%;
+    z-index: 1;
+    background-size: cover;
+}
+
+.experience-area .wrapper::after {
+    background: url('https://api.iconify.design/noto:woman-office-worker-light-skin-tone.svg?height=16') no-repeat center center / contain;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    left: 50%;
+}
+
+.left::before {
+    position: absolute;
+    content: '';
+    height: 0;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    right: 30px;
+    z-index: 1;
+    border-color: transparent transparent transparent #ffffff;
+    top: 22px;
+    width: 0;
+}
+
+.right::before {
+    content: '';
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #ffffff transparent transparent;
+}
+
+.right::after {
+    left: -16px;
+}
+
+.content {
+    position: relative;
+    padding: 20px 30px;
+    border-radius: 6px;
+    background-color: #ffffff;
+    box-shadow: rgba(58, 78, 95, 0.4) 0 10px 16px, rgba(58, 78, 95, 0.05) 0 -5px 16px;
+}
+
+.content:hover {
+    background: #FF6347;
+    -webkit-transition: ease-in-out .9s;
+    -moz-transition: ease-in-out .9s;
+    -ms-transition: ease-in-out .9s;
+    -o-transition: ease-in-out .9s;
+    transition: ease-in-out .9s;
+}
+
+.wrapper:hover.left::before {
+    border-color: transparent transparent transparent #FF6347;
+    -webkit-transition: ease-in-out .9s;
+    -moz-transition: ease-in-out .9s;
+    -ms-transition: ease-in-out .9s;
+    -o-transition: ease-in-out .9s;
+    transition: ease-in-out .9s;
+}
+
+.wrapper:hover.right::before {
+    border-color: transparent #FF6347 transparent transparent;
+    -webkit-transition: ease-in-out .9s;
+    -moz-transition: ease-in-out .9s;
+    -ms-transition: ease-in-out .9s;
+    -o-transition: ease-in-out .9s;
+    transition: ease-in-out .9s;
+}
+
+.wrapper:hover.wrapper::after {
+    border-color: #FF6347;
+    -webkit-transition: ease-in-out .9s;
+    -moz-transition: ease-in-out .9s;
+    -ms-transition: ease-in-out .9s;
+    -o-transition: ease-in-out .9s;
+    transition: ease-in-out .9s;
+}
+
+.content:hover h4 {
+    color: #ffffff;
+}
+
+.content:hover p {
+    color: #ffffff;
+}
+
+.content:hover .left::before {
+    border-color: transparent transparent transparent #FF6347;
+}
+
+.content:hover .right::before {
+    border-color: transparent #FF6347 transparent transparent;
+}
+
+@media all and (max-width: 600px) {
+    .timeline::after {
+        left: 31px;
+    }
+
+    .wrapper {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .wrapper::before {
+        left: 60px;
+    }
+
+    .wrapper:hover.left::before {
+        border-width: 10px 10px 10px 0;
+        border-color: transparent #FF6347 transparent transparent;
+    }
+
+
+    .left::after,
+    .right::after {
+        left: 15px;
+    }
+
+    .right {
+        left: 0;
+    }
+}
+
+/*==========================================================
+                    RESUME CSS END
+===========================================================*/
+
+
+
+
+/*==========================================================
+                    CONTACT CSS START
+===========================================================*/
+
+.contact-area .form-control {
+    border: 2px solid #a2a2a2;
+    box-shadow: none;
+    padding: 6px;
+    border-radius: 0;
+}
+
+.right-contact-text {
+    margin-bottom: 25px;
+}
+
+.right-contact-text i {
+    color: #FF6347;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.contact-area textarea.form-control {
+    border: 2px solid #a2a2a2;
+    padding: 6px;
+    height: 250px;
+    margin-bottom: 30px;
+}
+
+.btn.btn-send {
+    background: #FF6347;
+    color: #ffffff;
+    border-radius: 0;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.btn.btn-send:hover {
+    background: #fc4a2a;
+
+}
+
+.btn.btn-send:focus {
+    background: #fc4a2a;
+
+}
+
+.right-contact-text h2 {
+    margin-top: 2px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.right-contact-text p {
+    line-height: 21px;
+    letter-spacing: 2px;
+    font-size: 11px;
+    color: #777;
+}
+
+/*==========================================================
+                    CONTACT CSS END
+===========================================================*/
+
+
+/*==========================================================
+                    FOOTER CSS STARTS
+===========================================================*/
+
+.footer-area {
+    background: #171717;
+    color: #d0cece;
+    padding: 2rem 0;
+}
+
+.footer-area a {
+    color: #FF6347;
+    font-weight: 600;
+}
+
+marquee h4 {
+    color: #FF6347;
+    text-transform: uppercase;
+}
+
+
+/*==========================================================
+                    FOOTER CSS ENDS
+===========================================================*/
